@@ -111,6 +111,7 @@ const updateGuessesRemaining = function (guess) {
         remainingGuesses -= 1;
     } else {
         message.innerText = `Good guess! The word has the letter ${guess}.`;
+        remainingGuesses -= 1;
     }
 
     if (remainingGuesses === 0) {
